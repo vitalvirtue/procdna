@@ -29,3 +29,18 @@ of a local LLM.
 Detection should be deterministic.
 Explanation should be AI-assisted.
 Sensitive telemetry should stay local.
+
+## MVP Architecture
+
+For the first MVP, ProcDNA runs as a single-host prototype:
+
+```text
+Linux Mint Host
+├── procdna-agent
+│   ├── eBPF sensor
+│   ├── process passport builder
+│   ├── risk engine
+│   └── local LLM connector
+└── Ollama / local model
+The central procdna-brain service is planned for the enterprise version.
+In the MVP, the agent directly talks to the local LLM.

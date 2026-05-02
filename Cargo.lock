@@ -912,7 +912,9 @@ version = "0.1.0"
 dependencies = [
  "anyhow",
  "chrono",
+ "clap",
  "procdna-common",
+ "reqwest",
  "serde",
  "serde_json",
  "tokio",
