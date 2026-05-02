@@ -1,0 +1,14 @@
+host_id: "linux-mint-lab-01"
+mode: "observe"
+
+brain:
+  enabled: false
+  url: "http://127.0.0.1:8080"
+
+events:
+  execve: true
+  openat: false
+  connect: false
+
+buffer:
+  seconds: 120
